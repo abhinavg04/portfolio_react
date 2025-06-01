@@ -1,0 +1,27 @@
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Marquee base container */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Content wrapper */
+.marquee-content {
+  display: inline-block;
+  animation: scroll-left 20s linear infinite;
+}
+
+/* Keyframes for scrolling left */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
