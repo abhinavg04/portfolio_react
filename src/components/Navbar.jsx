@@ -12,7 +12,6 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center space-x-12">
         <NavLink href="#about">About</NavLink>
-        <NavLink href="#work">Work</NavLink>
         <NavLink href="#projects">Projects</NavLink>
         <NavLink href="#contact" className="px-6 py-2.5 bg-gray-900 text-white rounded-full hover:bg-black transition-all duration-300">
           Contact

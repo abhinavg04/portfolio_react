@@ -3,19 +3,39 @@ import { motion } from 'framer-motion';
 
 function About() {
   const skills = [
-    "Python", "Django", "Flask", "FastAPI",
-    "React.js", "PostgreSQL", "MongoDB", "Docker"
+    "Python", "Django", "Java", "REST API",
+    "React.js", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind  ", "Docker"
   ];
 
-  const education = {
-    degree: "Bachelor of Technology",
-    field: "Computer Science and Engineering",
-    university: "Government College of Engineering, Thrissur",
-    year: "2019-2023"
-  };
+  const educations = [
+    {
+      degree: "Bachelor of Technology",
+      field: "Computer Science and Engineering",
+      university: "Government College of Engineering, Thrissur",
+      year: "2019-2023",
+      website: "https://gectcr.ac.in/",
+      grade: "7.75 CGPA"
+    },
+    {
+      degree: "Higher Secondary Education",
+      field: "Computer Science",
+      university: "GVHSS Payyoli",
+      year: "2017-2019",
+      website: "#",
+      grade: "97.4%"
+    },
+    {
+      degree: "10th",
+      field: "General",
+      university: "Thiruvangoor HSS",
+      year: "2016",
+      website: "#",
+      grade: "98%"
+    }
+  ];
 
   return (
-    <section className="bg-black text-white py-20">
+    <section className="bg-black text-white py-20" id='about'>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,7 +44,7 @@ function About() {
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-4xl font-bold mb-8">About Me</h2>
-          
+
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -32,12 +52,12 @@ function About() {
             className="mb-12"
           >
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              I'm a Full Stack Developer with a year of hands-on experience in building robust web applications. 
-              Specializing in Python-based technologies, I craft efficient backend solutions while creating 
+              I'm a Full Stack Developer with a year of hands-on experience in building robust web applications.
+              Specializing in Python-based technologies, I craft efficient backend solutions while creating
               seamless frontend experiences.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              My approach combines technical expertise with problem-solving skills to deliver scalable 
+              My approach combines technical expertise with problem-solving skills to deliver scalable
               and maintainable solutions that meet business objectives.
             </p>
           </motion.div>
@@ -63,29 +83,46 @@ function About() {
             </div>
           </motion.div>
 
-                   {/* Education Section */}
-                   <motion.div
+          {/* Education Section */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             <h3 className="text-2xl font-semibold mb-6">Education</h3>
-            <div className="bg-gray-900 rounded-lg p-6">
-              <h4 className="text-xl font-medium mb-2">{education.degree}</h4>
-              <p className="text-gray-300 mb-2">{education.field}</p>
-              <motion.a 
-                href="https://gectcr.ac.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center gap-2"
-                whileHover={{ scale: 1.02 }}
-              >
-                <span>{education.university}</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </motion.a>
-              <p className="text-gray-400 mt-2">{education.year}</p>
+            <div className="space-y-4">
+              {educations.map((edu, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.2 * index, duration: 0.6 }}
+                  className="bg-gray-900 rounded-lg p-6 border-l-4 border-blue-500 hover:border-blue-400 transition-all"
+                >
+                  <div className="flex justify-between items-start mb-2">
+                    <h4 className="text-xl font-medium">{edu.degree}</h4>
+                    <span className="text-blue-400 font-semibold">{edu.grade}</span>
+                  </div>
+                  <p className="text-gray-300 mb-2">{edu.field}</p>
+                  <div className="flex justify-between items-center">
+                    <motion.a
+                      href={edu.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center gap-2"
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      <span>{edu.university}</span>
+                      {edu.website !== "#" && (
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      )}
+                    </motion.a>
+                    <span className="text-gray-500 text-sm">{edu.year}</span>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </motion.div>

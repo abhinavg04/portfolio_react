@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectCard = ({ title, image, link }) => {
   return (
     <div className="project-card group">
-      <a href={link} className="block">
+      <a href={link} target="_blank" className="block">
         <div className="relative overflow-hidden rounded-lg mb-4">
           <img 
             src={image || "/api/placeholder/400/320"} 

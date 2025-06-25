@@ -12,9 +12,8 @@ function App() {
     <div className="antialiased">
       <main>
         <Hero />
-        <Projects />
         <About />
-        {/* <SkillsShowcase /> */}
+        <Projects />
         <ContactSection />
         <Footer />
       </main>

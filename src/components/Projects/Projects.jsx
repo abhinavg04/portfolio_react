@@ -6,25 +6,25 @@ import SectionHeader from './SectionHeader';
 const projectsData = [
   {
     id: 1,
-    title: 'Learnlogicify Landing Page',
-    image: 'images/spiderman.jpg',
-    link: '#'
+    title: 'BuntsMatch matrmimony website',
+    image: 'images/Buntsmatch.png',
+    link: 'https://buntsmatch.com/'
   },
   {
     id: 2,
-    title: 'Winzee Web Chat application',
-    image: 'images/spiderman.jpg',
+    title: 'Prepaid auto booking website',
+    image: 'images/prepaidauto.png',
     link: '#'
   },
   {
     id: 3,
-    title: 'ChatGPT clone',
+    title: 'Milk procurement website',
     image: 'images/spiderman.jpg',
     link: '#'
   },
   {
     id: 4,
-    title: 'Gemini Clone',
+    title: 'Updatr, Freelancer - Client Management System',
     image: 'images/spiderman.jpg',
     link: '#'
   }
@@ -32,51 +32,7 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <div className="w-full bg-white py-16 px-6">
-      {/* Bio Section */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between mb-16"
-      >
-        <motion.div 
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          className="md:w-1/2 pr-8"
-        >
-          <p className="text-lg font-sans font-medium mb-6">
-            Driven by curiosity and a love for design, I create
-            simple, functional, and visually striking digital
-            experiences. As a student, I'm always learning and
-            exploring new ideas.
-          </p>
-        </motion.div>
-        <motion.div 
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-          className="md:w-1/2 md:text-right mt-6 md:mt-0"
-        >
-          <p className="text-sm text-gray-600 mb-4 font-sans">
-            The fusion of my passion for design, development, and seamless user experiences
-            places me at the intersection of creativity and technology in the digital world.
-          </p>
-          <motion.a 
-            href="#about" 
-            className="inline-flex items-center text-gray-700 font-medium font-sans"
-            whileHover={{ x: 10 }}
-            transition={{ type: "spring", stiffness: 400 }}
-          >
-            More about me
-            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </motion.a>
-        </motion.div>
-      </motion.div>
-
+    <div className="w-full bg-gray-200 py-16 px-6" id='projects'>
       {/* Projects Section */}
       <div className="max-w-6xl mx-auto">
         <motion.div
@@ -86,7 +42,7 @@ const Projects = () => {
         >
           <SectionHeader 
             title="Impressive Works" 
-            description="HERE'S A SELECTION OF PROJECTS THAT SHOWCASE MY PASSION FOR DESIGN AND DEVELOPMENT, REFLECTING CREATIVITY AND INNOVATION." 
+            description="HERE'S A SELECTION OF PROJECTS THAT SHOWCASE MY PASSION FOR SOFTWARE DEVELOPMENT, REFLECTING CREATIVITY AND INNOVATION." 
           />
         </motion.div>
         

@@ -3,7 +3,7 @@ import ContactButton from './ContactButton';
 
 const ContactSection = () => {
   return (
-    <div className="w-full py-16 px-6 bg-white">
+    <div className="w-full py-16 px-6 bg-white" id='contact'>
       <div className="max-w-6xl mx-auto">
         {/* Header Text */}
         <div className="mb-12">
