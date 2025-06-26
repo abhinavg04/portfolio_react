@@ -24,11 +24,11 @@ const ContactSection = () => {
         <div className="flex flex-col md:flex-row md:justify-between">
           <div>
             <p className="text-sm text-gray-500 mb-1">Email:</p>
-            <a href="mailto:its.ashwin.23@gmail.com" className="text-gray-800 hover:text-blue-600 transition duration-300">its.ashwin.23@gmail.com</a>
+            <a href="mailto:abhinavg1024@gmail.com" className="text-gray-800 hover:text-blue-600 transition duration-300">abhinavg1024@gmail.com</a>
           </div>
           <div className="mt-4 md:mt-0">
             <p className="text-sm text-gray-500 mb-1">Phone:</p>
-            <a href="tel:+918248669086" className="text-gray-800 hover:text-blue-600 transition duration-300">(+91) 8248669086</a>
+            <a href="tel:+917306588516" className="text-gray-800 hover:text-blue-600 transition duration-300">(+91) 7306588516</a>
           </div>
         </div>
       </div>

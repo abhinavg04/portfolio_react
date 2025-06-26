@@ -69,14 +69,20 @@ const Projects = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.4 }}
         >
-          <motion.button 
-            className="px-4 py-2 flex items-center rounded-full border border-gray-300 text-sm font-medium"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <a
+            href="https://github.com/abhinavg04"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <span className="mr-2">•</span>
-            Explore more
-          </motion.button>
+            <motion.button 
+              className="px-4 py-2 flex items-center rounded-full border border-gray-300 text-sm font-medium"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span className="mr-2">•</span>
+              Explore more
+            </motion.button>
+          </a>
         </motion.div>
       </div>
     </div>
