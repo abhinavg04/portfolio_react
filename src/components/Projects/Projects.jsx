@@ -19,7 +19,7 @@ const projectsData = [
   {
     id: 3,
     title: 'Milk procurement website',
-    image: 'images/spiderman.jpg',
+    image: 'images/dcare.png',
     link: '#'
   },
   {
