@@ -25,7 +25,7 @@ const projectsData = [
   {
     id: 4,
     title: 'Updatr, Freelancer - Client Management System',
-    image: 'images/spiderman.jpg',
+    image: 'images/updatr.png',
     link: '#'
   }
 ];
