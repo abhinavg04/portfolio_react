@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 function About() {
   const skills = [
-    "Python", "Django", "Java", "REST API",
-    "React.js", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind  ", "Docker"
+    "Python", "Django", "Java", "REST API","FastAPI",
+    "React.js", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap", "TailwindCSS", "Docker","AWS","Git","Pandas"
   ];
 
   const educations = [

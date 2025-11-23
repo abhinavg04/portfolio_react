@@ -67,7 +67,7 @@ const Hero = () => {
         </svg>
       ),
       label: "Email",
-      href: "mailto:abhinavg1024@email.com"
+      href: "mailto:dev.abhinavg@email.com"
     },
   ];
 
