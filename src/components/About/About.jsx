@@ -1,17 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import SectionHeader from '../Projects/SectionHeader';
 
 function About() {
   const skills = [
-    "Python", "Django", "Java", "REST API","FastAPI",
-    "React.js", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap", "TailwindCSS", "Docker","AWS","Git","Pandas"
+    "Python", "Java", "JavaScript", "Django", "Django REST Framework", "FastAPI",
+    "React", "HTML", "CSS", "Bootstrap", "TailwindCSS", "MySQL", "SQLite3",
+    "Docker", "Git", "GitHub", "BitBucket", "AWS", "Pandas", "Redis", "Selenium"
   ];
 
   const educations = [
     {
-      degree: "Bachelor of Technology",
-      field: "Computer Science and Engineering",
-      university: "Government College of Engineering, Thrissur",
+      degree: "B Tech in CSE",
+      field: "Computer Science, Core Java, Data Structure, Database Management",
+      university: "Government Engineering College, Thrissur",
       year: "2019-2023",
       website: "https://gectcr.ac.in/",
       grade: "7.75 CGPA"
@@ -23,27 +25,23 @@ function About() {
       year: "2017-2019",
       website: "#",
       grade: "97.4%"
-    },
-    {
-      degree: "10th",
-      field: "General",
-      university: "Thiruvangoor HSS",
-      year: "2016",
-      website: "#",
-      grade: "98%"
     }
   ];
 
   return (
-    <section className="bg-black text-white py-20" id='about'>
-      <div className="container mx-auto px-4">
+    <section className="bg-black text-white py-20 px-6" id='about'>
+      <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
-          <h2 className="text-4xl font-bold mb-8">About Me</h2>
+          <SectionHeader 
+            title="About Me" 
+            description="PASSIONATE PYTHON FULL STACK DEVELOPER WITH EXPERTISE IN BUILDING SCALABLE WEB APPLICATIONS"
+            dark={true}
+          />
 
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -52,13 +50,15 @@ function About() {
             className="mb-12"
           >
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              I'm a Full Stack Developer with a year of hands-on experience in building robust web applications.
-              Specializing in Python-based technologies, I craft efficient backend solutions while creating
-              seamless frontend experiences.
+              I'm a Python Full Stack Developer with hands-on experience in building and deploying scalable 
+              Python-based web applications using Django and REST APIs. I specialize in designing and optimizing 
+              complex relational database schemas in MySQL, implementing efficient query optimization strategies 
+              to handle large-scale transactional data with high accuracy, integrity, and performance.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              My approach combines technical expertise with problem-solving skills to deliver scalable
-              and maintainable solutions that meet business objectives.
+              My approach combines technical expertise with collaborative problem-solving to deliver scalable 
+              and maintainable solutions. I work effectively in cross-functional teams, focusing on creating 
+              seamless user experiences while ensuring robust backend architecture.
             </p>
           </motion.div>
 
@@ -70,14 +70,14 @@ function About() {
             className="mb-12"
           >
             <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {skills.map((skill, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ scale: 1.05 }}
-                  className="bg-gray-900 rounded-lg px-4 py-3 text-center"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  className="bg-gray-900 rounded-lg px-4 py-3 text-center border border-gray-800 hover:border-blue-500 transition-all duration-300 cursor-default"
                 >
-                  {skill}
+                  <span className="text-sm font-medium">{skill}</span>
                 </motion.div>
               ))}
             </div>

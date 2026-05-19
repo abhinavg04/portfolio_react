@@ -12,7 +12,9 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center space-x-12">
         <NavLink href="#about">About</NavLink>
+        <NavLink href="#experience">Experience</NavLink>
         <NavLink href="#projects">Projects</NavLink>
+        <NavLink href="#certifications">Certifications</NavLink>
         <NavLink href="#contact" className="px-6 py-2.5 bg-gray-900 text-white rounded-full hover:bg-black transition-all duration-300">
           Contact
         </NavLink>
@@ -37,8 +39,9 @@ const Navbar = () => {
         <div className="absolute top-24 left-4 right-4 bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg md:hidden border border-gray-100">
           <div className="flex flex-col py-4">
             <MobileNavLink href="#about">About</MobileNavLink>
-            <MobileNavLink href="#work">Work</MobileNavLink>
+            <MobileNavLink href="#experience">Experience</MobileNavLink>
             <MobileNavLink href="#projects">Projects</MobileNavLink>
+            <MobileNavLink href="#certifications">Certifications</MobileNavLink>
             <MobileNavLink href="#contact" className="text-gray-900 font-semibold">Contact</MobileNavLink>
           </div>
         </div>

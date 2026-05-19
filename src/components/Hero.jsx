@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-  const titles = ["Full Stack Developer", "Software Engineer", "UI/UX Designer"];
+  const titles = ["Python Full Stack Developer", "Software Engineer", "Django Developer"];
   const combinedText = titles.join("   •   ");
   
   const navItems = [
@@ -23,7 +23,7 @@ const Hero = () => {
         </svg>
       ),
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/abhinav-g-628850192/"
+      href: "https://www.linkedin.com/in/abhinavg/"
     },
     {
       icon: (
@@ -67,7 +67,7 @@ const Hero = () => {
         </svg>
       ),
       label: "Email",
-      href: "mailto:dev.abhinavg@email.com"
+      href: "mailto:dev.abhinavg@gmail.com"
     },
   ];
 

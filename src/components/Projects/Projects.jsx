@@ -6,25 +6,25 @@ import SectionHeader from './SectionHeader';
 const projectsData = [
   {
     id: 1,
-    title: 'BuntsMatch matrmimony website',
-    image: 'images/Buntsmatch.png',
-    link: 'https://buntsmatch.com/'
+    title: 'D-Care Milk Procurement Website',
+    description: 'Designed and implemented a milk procurement system that streamlined farmer onboarding, milk collection monitoring, and real-time inventory management. Designed optimized MySQL schemas and APIs for handling large-scale transactional data with real-time quality and route-wise tracking.',
+    technologies: ['Django', 'REST API', 'MySQL'],
+    image: 'images/dcare.png',
+    link: '#'
   },
   {
     id: 2,
-    title: 'Prepaid auto booking website',
+    title: 'Prepaid Auto Booking',
+    description: 'Developed a digital prepaid auto booking and fare management platform for Bangalore Metro Rail Corporation Ltd (BMRCL) to automate passenger ride scheduling. Built dynamic dashboards using Django templates and AJAX for live booking insights, vehicle allocation, and transaction analytics.',
+    technologies: ['Django', 'MySQL', 'Bootstrap'],
     image: 'images/prepaidauto.png',
     link: '#'
   },
   {
     id: 3,
-    title: 'Milk procurement website',
-    image: 'images/dcare.png',
-    link: '#'
-  },
-  {
-    id: 4,
-    title: 'Updatr, Freelancer - Client Management System',
+    title: 'OpsChain Supply Chain Management System',
+    description: 'Built a full-stack supply chain management platform with JWT-based authentication and seamless communication between FastAPI backend and React frontend. Developed and optimized RESTful APIs for real-time inventory tracking, supplier management, and order processing across multiple warehouses.',
+    technologies: ['FastAPI', 'React'],
     image: 'images/updatr.png',
     link: '#'
   }
@@ -56,6 +56,8 @@ const Projects = () => {
             >
               <ProjectCard 
                 title={project.title}
+                description={project.description}
+                technologies={project.technologies}
                 image={project.image}
                 link={project.link}
               />
