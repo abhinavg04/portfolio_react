@@ -248,11 +248,11 @@ function Hero() {
               <p>profile.signal</p>
             </div>
             <div className="portrait-frame">
-              <img src="/images/hero.png" alt="Abhinav G" />
+              <img src="/images/profile.jpg" alt="Abhinav G" />
             </div>
             <div className="floating-note note-top">
               <span>Current focus</span>
-              <strong>RAG + business workflow automation</strong>
+              <strong>Business workflow automation</strong>
             </div>
             <div className="floating-note note-bottom">
               <span>Core stack</span>
