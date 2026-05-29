@@ -69,7 +69,7 @@ const projects = [
   {
     title: 'Integrated Dairy Supply Chain Platform',
     stack: ['Django', 'React', 'LangChain', 'RAG'],
-    image: '/images/dcare.png',
+    image: '/images/bemul-factory.jpg',
     impact: 'AI-assisted operations layer for KMF-scale dairy workflows',
     points: [
       'Built a LangChain ReAct agent integrating MySQL and RAG pipelines for context-aware querying.',
@@ -288,7 +288,7 @@ function Experience() {
   return (
     <section id="experience" className="bg-[#151514] px-5 py-24 text-white md:px-8">
       <div className="mx-auto max-w-6xl">
-        <SectionIntro eyebrow="Experience" title="Production backend work, not toy problems." description="The latest resume points to a practical lane: complex business workflows, transactional data, and AI-assisted querying." dark />
+        <SectionIntro eyebrow="Experience" title="Production backend works" description="The latest resume points to a practical lane: complex business workflows, transactional data, and AI-assisted querying." dark />
         <div className="mt-12 grid gap-6 lg:grid-cols-[0.72fr_1.28fr]">
           <motion.div {...fadeUp} className="rounded-[8px] border border-white/10 bg-white/[0.04] p-7">
             <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#5eead4]">Operating mode</p>
@@ -334,7 +334,7 @@ function Projects() {
   return (
     <section id="projects" className="bg-[#f5f1e8] px-5 py-24 md:px-8">
       <div className="mx-auto max-w-6xl">
-        <SectionIntro eyebrow="Selected projects" title="Resume bullets turned into case studies." description="Each project is framed around the operational problem, the stack, and the part that makes it memorable." />
+        <SectionIntro eyebrow="Selected projects" title="My Projects" description="" />
         <div className="mt-12 grid gap-6">
           {projects.map((project, index) => (
             <motion.article key={project.title} {...fadeUp} className="project-row group">
